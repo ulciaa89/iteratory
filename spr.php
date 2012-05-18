@@ -12,10 +12,7 @@
 
 $iterator = new RecursiveDirectoryIterator('dane');
 
-$objects = new RecursiveIteratorIterator(
-    $iterator,
-    RecursiveIteratorIterator::SELF_FIRST
-);
+$objects = new RecursiveIteratorIterator($iterator);
 
 foreach ($objects as $f) {
 
