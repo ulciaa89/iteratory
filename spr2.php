@@ -26,6 +26,15 @@ echo "\ngetRealPath() = " . $f->getRealPath() . '<br />';
 
 echo "\n\n=====STOP=====\n\n";
 
+$result = $f->isFile();
+
+var_dump($result);
+
+
+$result = $f->isDir();
+
+var_dump($result);
+
 ?>
 </pre>
 
