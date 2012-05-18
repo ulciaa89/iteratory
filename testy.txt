@@ -1,0 +1,1 @@
+phpunit --coverage-html coverage/ -c ftp-recursive-directory-iterator/Finder/phpunit.xml.dist ftp-recursive-directory-iterator/Finder/Tests/FtpSplFileInfoTest.php

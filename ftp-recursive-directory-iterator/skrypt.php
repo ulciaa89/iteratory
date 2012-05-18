@@ -25,11 +25,11 @@ $i = new RecursiveDirectoryFtpIterator('ftp://ftp.mozilla.org');
 $objects = new RecursiveIteratorIterator($i);
 
 foreach($objects as $k => $v){
-//    echo "[k===$k] [v===$v]\n";
+    echo "[k===$k] [v===$v]\n";
 //    var_dump($k);
 //    var_dump($v);
 //    echo $v->getFilename();
-    echo $v . "\n";
+//    echo $v . "\n";
     ob_flush();
     flush();
 }
