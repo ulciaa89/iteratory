@@ -6,6 +6,8 @@
   </head>
 <body>
 
+
+<pre>
 <?php
 
 $iterator = new RecursiveDirectoryIterator('dane');
@@ -16,10 +18,16 @@ $objects = new RecursiveIteratorIterator(
 );
 
 foreach ($objects as $f) {
+    echo "\n\n=====START=====";
+    var_dump($f);
+    echo "\n\n";
     echo $f->getFilename() . '<br />';
+    echo "\n\n=====STOP=====\n\n";
 }
 
 ?>
+</pre>
+
 
 </body>
 </html>
