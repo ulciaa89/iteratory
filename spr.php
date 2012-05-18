@@ -18,10 +18,19 @@ $objects = new RecursiveIteratorIterator(
 );
 
 foreach ($objects as $f) {
+
     echo "\n\n=====START=====";
+    echo "\necho: " . $f;
+    echo "\nvar_dump():";
     var_dump($f);
     echo "\n\n";
-    echo $f->getFilename() . '<br />';
+    echo "\ngetFilename() = " . $f->getFilename();
+    echo "\ngetBasename() = " . $f->getBasename() . '<br />';
+//    echo "\ngetExtension() = " . $f->getExtension() . '<br />';
+    echo "\ngetPath() = " . $f->getPath() . '<br />';
+    echo "\ngetPathname() = " . $f->getPathname() . '<br />';
+    echo "\ngetRealPath() = " . $f->getRealPath() . '<br />';
+
     echo "\n\n=====STOP=====\n\n";
 }
 
